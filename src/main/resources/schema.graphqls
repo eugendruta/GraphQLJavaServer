@@ -1,0 +1,19 @@
+type Link {
+  id: ID!
+  url: String!
+  description: String!
+}
+type ListboxItem {
+  id: ID!
+  wert: String!
+  description: String!
+}
+
+type Query {
+  allLinks: [Link]
+  listBox: [ListboxItem]
+}
+
+schema {
+  query: Query
+}
